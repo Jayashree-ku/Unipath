@@ -1,111 +1,217 @@
-# UNIPATH — Your Future, Your Path.
+# UNIPATH
 
-> **"Don't just choose where to study. Discover what you could become."**
+### **Your Future, Your Path.**
 
-UNIPATH is an interactive university discovery and engineering career exploration platform, built specifically for prospective students and parents exploring **Sapthagiri NPS University** (Bengaluru).
+> *"Don't just choose where to study. Discover what you could become."*
 
-Unlike conventional college listing directories or promotional brochures, UNIPATH takes an engineering-first, student-centered approach: connecting a student's personal interests to verified academic disciplines, foundational skills, hands-on portfolio projects, and long-term career horizons.
+[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)]()
+[![Framework](https://img.shields.io/badge/Framework-React%2019%20%2B%20Vite%206-blue.svg)]()
+[![Styling](https://img.shields.io/badge/Styling-Tailwind%20CSS%20v4-38bdf8.svg)]()
+[![Icons](https://img.shields.io/badge/Icons-Lucide%20React-orange.svg)]()
+[![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)]()
 
 ---
 
-## 🌟 Key Features
+## 🌐 Live Demo & Deployment
 
-### 1. Discover Your Fit (Feature 1: Interactive Interest Quiz)
-- **Target Audience:** Students in Classes 11 & 12, Class 12 graduates, and parents.
-- **7 Scenario Questions:** Covering AI, software architecture, data analytics, electronics/embedded systems, electrical power/green energy, and multi-disciplinary exploration.
-- **Deterministic Local Scoring:** Transparent, explainable rule-based scoring without requiring external AI APIs or authentication.
-- **Top 3 Match Profiles:** Displays personalized alignment percentages, why each field matched, recommended matching programmes at Sapthagiri NPS University, and starter project recommendations.
+- **Public Live Application:** `https://unipath-explore.vercel.app` *(or custom domain)*
+- **GitHub Repository:** [https://github.com/Jayashree-ku/UNIPATH](https://github.com/Jayashree-ku/UNIPATH)
+- **Target Institution:** [Sapthagiri NPS University](https://www.snpsu.edu.in/), Bengaluru, India
 
-### 2. Experience Your Future (Feature 2: Future Simulator)
-- **Interactive Multi-Factor Journey Generator:** Calibrates based on student's selected interest area, preferred hands-on activity, current technical experience (Beginner, Intermediate, Advanced), and long-term career direction.
+---
+
+## 📌 The Problem
+
+Choosing an engineering path is one of the most critical decisions a student and their family make, yet the current discovery experience is deeply broken:
+
+1. **Static Marketing & Catalogues:** Traditional university websites and brochures list departments, cutoffs, and fees without explaining what a student will actually study or build.
+2. **Abstract Career Projections:** Students often pick branches based on rumors or peer pressure without understanding the difference between Computer Science, AI & ML, Data Science, Electronics & Communication, and Electrical Systems.
+3. **Black-Box Confusion:** Generic AI chatbots frequently hallucinate rankings, placement statistics, or fabricated facilities, misleading prospective applicants.
+
+---
+
+## 💡 The Solution: UNIPATH
+
+**UNIPATH** transforms university selection from passive browsing into an **interactive engineering discovery experience**.
+
+Focused exclusively on **Sapthagiri NPS University**, UNIPATH anchors academic decisions in who the student could become:
+$$\text{Interests} \longrightarrow \text{Engineering Branch} \longrightarrow \text{Foundational Skills} \longrightarrow \text{Realistic Projects} \longrightarrow \text{Career Horizons}$$
+
+UNIPATH is:
+- **Student-Built & Independent:** Clearly identified as an independent exploration project, not the university's official admissions website.
+- **Strictly Verified:** Features verified undergraduate and postgraduate engineering branches sourced directly from `snpsu.edu.in`.
+- **Deterministic & Transparent:** Zero external AI API keys or black-box guesswork; logic is deterministic, reproducible, and explainable.
+
+---
+
+## ✨ Core Features
+
+### 1. Discover Your Fit (Interactive Interest Quiz)
+- **Target Audience:** Students in Classes 11 & 12, Class 12 graduates, and exploring parents.
+- **7 Scenario-Based Questions:** Covering interests, problem-solving styles, preferred activities, breakthrough technologies, and capstone aspirations.
+- **Deterministic Match Scoring:** Evaluates answers across AI, Software Systems, Data Science, Electronics & Embedded Hardware, Electrical Energy, and Broad Exploration.
+- **Actionable Report:** Unveils top 3 matching disciplines, calculated alignment percentage, explicit explanation of *why* it matched, and exact matching degree programmes at Sapthagiri NPS University.
+
+### 2. Experience Your Future (Future Simulator)
+- **Custom Multi-Factor Parameters:** Calibrates roadmap according to interest domain, preferred activity (building apps, logical problem-solving, data analysis, hardware experimentation, research), starting experience level (Beginner, Intermediate, Advanced), and career ambition.
 - **5-Stage Visual Roadmap:**
-  - **Stage 1 (Explore):** Foundational philosophy and mental model.
-  - **Stage 2 (Learn):** Core mathematical and computational skills tailored to experience.
-  - **Stage 3 (Build):** 2–3 realistic portfolio projects calibrated to experience level.
-  - **Stage 4 (Grow):** Git workflows, coding practice, competitions, and best practices.
-  - **Stage 5 (Explore Careers):** Concrete industry roles, responsibilities, and matching Sapthagiri programmes.
-- **Browser-Native PDF Export / Print:** Print stylesheet formatted specifically for clean, printable roadmaps.
+  - **Stage 1 (Explore):** Core mental model and philosophy in simple language.
+  - **Stage 2 (Learn):** Foundational mathematical, computational, and physical skills.
+  - **Stage 3 (Build):** 2–3 realistic portfolio projects graded by experience level.
+  - **Stage 4 (Grow):** Git workflows, coding practice, open-source, and competitions.
+  - **Stage 5 (Explore Careers):** Concrete industry roles, daily responsibilities, and relevant Sapthagiri degree programmes.
+- **Native PDF Export / Print:** Built-in browser `@media print` layout allowing students to save their tailored roadmap as a PDF with a single click.
 
-### 3. Career Path Explorer (Feature 3)
+### 3. Career Path Explorer
 - 5 comprehensive engineering pathways:
   - **Path A:** Artificial Intelligence & Machine Learning
   - **Path B:** Software Development & Systems Engineering
   - **Path C:** Data Science & Analytics
   - **Path D:** Electronics & Embedded Systems
   - **Path E:** Electrical Systems & Power Engineering
-- Structured as: `INTEREST → RELEVANT ENGINEERING AREA → FOUNDATIONAL SKILLS → EXAMPLE PROJECTS → POSSIBLE CAREERS`
-- Interactive filter pills and expandable stage deep-dives.
+- Filterable interface with expandable stages from foundational skills to capstone projects and industry job titles.
 
-### 4. Explore Sapthagiri (Feature 4: University Hub)
-- **Verified Officially Sourced Data:** Verified directly from `snpsu.edu.in`.
-- **Verified Programmes:**
-  - B.E. Computer Science & Engineering
-  - B.E. CSE (Artificial Intelligence & Machine Learning)
-  - B.E. CSE (Artificial Intelligence & Data Science)
-  - B.E. CSE (Data Science)
-  - B.E. Electronics & Communication Engineering
-  - B.E. Electrical & Electronics Engineering
-  - M.Tech CSE & M.Tech ECE (VLSI Design)
-- **Explicit Content Provenance Badges:**
-  - `Officially Sourced Information` (from university portal)
-  - `UNIPATH Guidance` (student orientation perspective)
-- **Direct Official Links:** Safe external links to official website, engineering portal, admissions information, and application portal.
+### 4. Explore Sapthagiri (Verified University Hub)
+- **Verified Official Resources:**
+  - Official University Website: [snpsu.edu.in](https://www.snpsu.edu.in/)
+  - School of Engineering: [snpsu.edu.in/engineering](https://snpsu.edu.in/engineering/)
+  - Admissions Portal: [snpsu.edu.in/admissions](https://www.snpsu.edu.in/admissions)
+  - Active Application Form: [snpsuadmissions.snpsu.edu.in](https://snpsuadmissions.snpsu.edu.in/)
+- **Provenance Badges:** Distinct labels indicating **"Officially Sourced Information"** (from university portal) vs. **"UNIPATH Guidance"** (orientation perspectives).
+- Search and category filters for B.E. and M.Tech programmes.
 
-### 5. About UNIPATH (Feature 5)
-- Clear declaration as an independent, student-built discovery project.
-- Strict anti-fabrication standards (no fake placement stats, rankings, fees, or testimonials).
-- Zero black-box claims; open, deterministic guidance framework.
+### 5. About UNIPATH & Integrity Standard
+- Independent platform declaration.
+- Zero-fabrication pledge: no artificial placement figures, fake student testimonials, or unverified claims.
 
 ---
 
-## 🎨 Visual Design System
+## 📸 Screenshots & UI Showcase
 
-- **Color Palette:**
-  - Deep Navy: `#0B1220` (Primary surface background)
-  - Charcoal: `#111827` (Card and container background)
-  - Electric Blue: `#2563EB` (Primary brand accent and highlights)
-  - White: `#FFFFFF` (Headings and high-contrast text)
-  - Muted Blue-Grey: `#64748B` / `#94A3B8` (Secondary metadata text)
-- **Typography:** Plus Jakarta Sans & JetBrains Mono (clean, editorial, legible).
-- **Icons:** Lucide React icons exclusively (no emojis used as interface icons).
-- **Responsive:** Mobile navigation drawer, adaptive grid layouts for tablet and desktop.
+```
++-----------------------------------------------------------------------------------+
+|  [UNIPATH]  Home   Discover Your Fit   Future Simulator   Career Paths   [Start]  |
++-----------------------------------------------------------------------------------+
+|                                                                                   |
+|                   Your Future Doesn't Have to Be a Guess.                         |
+|   Discover your engineering interests, explore possible career paths, and plan   |
+|                         your journey with UNIPATH.                                |
+|                                                                                   |
+|           [ Discover My Path ]              [ Explore Sapthagiri ]                |
+|                                                                                   |
+|    +-------------------------------------------------------------------------+    |
+|    |  [01] Interest  ->  [02] Degree  ->  [03] Skills  ->  [04] Projects      |    |
+|    +-------------------------------------------------------------------------+    |
++-----------------------------------------------------------------------------------+
+```
+
+*(Place actual project screenshots in `public/screenshots/` or project assets when deploying)*
 
 ---
 
-## 🛠️ Tech Stack & Architecture
+## 🛠️ Technology Stack
 
-- **Framework:** React 19 + Vite 6
-- **Styling:** Tailwind CSS v4
-- **Icons:** Lucide React
-- **Architecture:** Zero-backend, zero-API-key client-side execution for 100% reliable offline/demonstration readiness.
+| Layer | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Frontend Framework** | [React 19](https://react.dev/) | Component architecture, responsive state, and hooks |
+| **Build Tool & Bundler** | [Vite 6](https://vite.dev/) | Lightning-fast HMR and optimized production bundling |
+| **Styling & Design System** | [Tailwind CSS v4](https://tailwindcss.com/) | Modern utility-first styling with Deep Navy (`#0B1220`) theme |
+| **Iconography** | [Lucide React](https://lucide.dev/) | Clean, accessible vector icons (no emojis as interface icons) |
+| **Typography** | Plus Jakarta Sans & JetBrains Mono | Legible modern editorial typography |
+| **Architecture** | Client-side deterministic engine | 100% offline-ready, zero external API keys, zero authentication barriers |
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Installation & Local Development
 
 ### Prerequisites
-- Node.js (v18+)
-- npm (v9+)
+- [Node.js](https://nodejs.org/) (version 18.0.0 or higher)
+- [npm](https://www.npmjs.com/) (version 9.0.0 or higher)
 
-### Installation & Run
-```bash
-# Navigate to the project directory
-cd unipath
+### Setup Instructions
 
-# Install dependencies (already installed if cloning locally)
-npm install
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Jayashree-ku/UNIPATH.git
+   cd UNIPATH
+   ```
 
-# Start local development server
-npm run dev
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-# Build production bundle
-npm run build
+3. **Start the local development server:**
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-# Preview production build locally
-npm run preview
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+   The production-ready assets will be generated in the `dist/` directory.
+
+5. **Preview the production build locally:**
+   ```bash
+   npm run preview
+   ```
+
+---
+
+## 📂 Project Directory Structure
+
+```
+unipath/
+├── public/                       # Static public assets
+│   └── favicon.svg               # Vector brand icon
+├── src/
+│   ├── components/               # Modular React UI components
+│   │   ├── AboutSection.jsx      # Mission, philosophy, and disclaimers
+│   │   ├── CareerExplorer.jsx    # 5 structured engineering pathways
+│   │   ├── FitQuiz.jsx           # 7-question interest quiz & results
+│   │   ├── Footer.jsx            # Footers with official links & legal disclaimers
+│   │   ├── FutureSimulator.jsx   # 5-stage interactive personalized roadmap
+│   │   ├── Hero.jsx              # Hero section, value props, and interactive stepper
+│   │   ├── Navbar.jsx            # Sticky header with mobile drawer
+│   │   └── SapthagiriHub.jsx     # Verified university information & portals
+│   ├── data/
+│   │   └── engineeringData.js    # Verified programmes, quiz questions, and roadmap logic
+│   ├── App.jsx                   # Main layout and cross-feature orchestration
+│   ├── index.css                 # Tailwind CSS v4 and print styles
+│   └── main.jsx                  # React DOM entry point
+├── .gitignore                    # Excludes node_modules, build outputs, and secrets
+├── index.html                    # HTML entry template
+├── package.json                  # Dependencies and build scripts
+├── README.md                     # Project documentation
+└── vite.config.js                # Vite & Tailwind plugin configuration
 ```
 
 ---
 
-## ⚖️ Legal & Affiliation Notice
-UNIPATH is an independent student-built exploratory platform. It is not an official portal of Sapthagiri NPS University. All university programme names, trademarks, and links belong to Sapthagiri NPS University.
+## 🚢 Deployment Guide
+
+UNIPATH is designed as a standalone static Single Page Application (SPA), making it fast and simple to deploy:
+
+### Option A: Deploy to Vercel (Recommended)
+1. Visit [vercel.com](https://vercel.com) and log in with your GitHub account.
+2. Click **"Add New"** > **"Project"**.
+3. Import the `Jayashree-ku/UNIPATH` repository.
+4. Framework Preset: **Vite** (automatically detected).
+5. Build Command: `npm run build`
+6. Output Directory: `dist`
+7. Click **"Deploy"**. Your live URL will be ready within 60 seconds.
+
+### Option B: Deploy to Netlify
+1. Visit [netlify.com](https://netlify.com) and log in with GitHub.
+2. Click **"Add new site"** > **"Import an existing project"**.
+3. Choose `Jayashree-ku/UNIPATH`.
+4. Build command: `npm run build`, Publish directory: `dist`.
+5. Click **"Deploy UNIPATH"**.
+
+---
+
+## ⚖️ Disclaimer & Compliance Notice
+
+UNIPATH is an independent student-built exploratory platform. It is not an official portal of Sapthagiri NPS University. All university programme names, trademarks, and links belong to Sapthagiri NPS University. Learning path suggestions are illustrative and do not guarantee admission or career outcomes.
