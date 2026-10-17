@@ -14,7 +14,7 @@
 
 ## 🌐 Live Demo & Deployment
 
-- **Public Live Application:** `https://unipath-explore.vercel.app` *(or custom domain)*
+- **Public Live Application:** https://unipath-amber.vercel.app/
 - **GitHub Repository:** [https://github.com/Jayashree-ku/UNIPATH](https://github.com/Jayashree-ku/UNIPATH)
 - **Target Institution:** [Sapthagiri NPS University](https://www.snpsu.edu.in/), Bengaluru, India
 
